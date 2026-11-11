@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
+  const [data, setData] = useState([]);
   const limit = 10;
   useEffect(() => {
     const fetchTodos = async () => {
@@ -31,7 +32,6 @@ const Home = () => {
       ),
     }));
   };
-  const [data, setData] = useState([]);
   const totalPages = Math.ceil((data.total || 0) / limit);
 
   console.log(data, "satte");
