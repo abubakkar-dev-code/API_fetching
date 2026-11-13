@@ -66,7 +66,7 @@ const Home = () => {
                 </div>
               ))
             )}
-            <div className="flex justify-center items-center gap-4 mt-6">
+            <div>
               <button
                 disabled={page === 1}
                 onClick={() => setPage((prev) => prev - 1)}
