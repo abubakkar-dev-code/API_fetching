@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = [
-    { title: "Home", path: "/home" },
+    { title: "Home", path: "/" },
     { title: "Products", path: "/products" },
     { title: "Contact", path: "/contact" },
   ]
